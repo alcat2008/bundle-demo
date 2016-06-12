@@ -19,6 +19,7 @@
 		5833F7051CFFFFAC000008B7 /* bundleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833F7041CFFFFAC000008B7 /* bundleDemoUITests.m */; };
 		5833F7131D000205000008B7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5833F7121D000205000008B7 /* Podfile */; };
 		5833F7161D000E75000008B7 /* ReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833F7151D000E75000008B7 /* ReactView.m */; };
+		5839417A1D0D58250071CC3D /* ExportModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 583941791D0D58250071CC3D /* ExportModule.m */; };
 		5B295789C3C9042E0826ADAB /* libPods-bundleDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8650DF59F43BB2736A892C1 /* libPods-bundleDemoTests.a */; };
 		601032942F71414FBCDF9271 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC10BA35C104F3BBD6E764D /* libc++.tbd */; };
 		7740279186E528421F82D4F8 /* libPods-bundleDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C696CB07ADABEC84D1EB20 /* libPods-bundleDemoUITests.a */; };
@@ -83,6 +84,8 @@
 		5833F7121D000205000008B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5833F7141D000E75000008B7 /* ReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactView.h; sourceTree = "<group>"; };
 		5833F7151D000E75000008B7 /* ReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactView.m; sourceTree = "<group>"; };
+		583941781D0D58250071CC3D /* ExportModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportModule.h; sourceTree = "<group>"; };
+		583941791D0D58250071CC3D /* ExportModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportModule.m; sourceTree = "<group>"; };
 		6CBC56046CFB4D3BBAC436C7 /* libRNShare.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNShare.a; sourceTree = "<group>"; };
 		A3D7B1CE5CD52A5F722225A7 /* Pods-bundleDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundleDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bundleDemoUITests/Pods-bundleDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4F1A08A992443CFB2047F0D /* RNShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 			children = (
 				5833F6E21CFFFFAC000008B7 /* AppDelegate.h */,
 				5833F6E31CFFFFAC000008B7 /* AppDelegate.m */,
+				583941781D0D58250071CC3D /* ExportModule.h */,
+				583941791D0D58250071CC3D /* ExportModule.m */,
 				5833F7141D000E75000008B7 /* ReactView.h */,
 				5833F7151D000E75000008B7 /* ReactView.m */,
 				5833F6E51CFFFFAC000008B7 /* ViewController.h */,
@@ -534,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5833F7161D000E75000008B7 /* ReactView.m in Sources */,
+				5839417A1D0D58250071CC3D /* ExportModule.m in Sources */,
 				5833F6E71CFFFFAC000008B7 /* ViewController.m in Sources */,
 				5833F6E41CFFFFAC000008B7 /* AppDelegate.m in Sources */,
 				5833F6E11CFFFFAC000008B7 /* main.m in Sources */,
