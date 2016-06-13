@@ -16,6 +16,9 @@ target 'bundleDemo' do
     'RCTWebSocket',
     # Add any other subspecs you want to use in your project
   ]
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
   # Pods for bundleDemo
 
