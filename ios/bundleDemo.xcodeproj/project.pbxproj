@@ -257,11 +257,13 @@
 			buildConfigurationList = 5833F7091CFFFFAC000008B7 /* Build configuration list for PBXNativeTarget "bundleDemo" */;
 			buildPhases = (
 				D3B12261F5517DE8DFACF23D /* 📦 Check Pods Manifest.lock */,
+				58E70AED1D3DC2210072D7BA /* Launch Packager */,
 				5833F6D81CFFFFAB000008B7 /* Sources */,
 				5833F6D91CFFFFAB000008B7 /* Frameworks */,
 				5833F6DA1CFFFFAB000008B7 /* Resources */,
 				5D0967BE78F9255DDC472CD6 /* 📦 Embed Pods Frameworks */,
 				FA2D0F251DA02B2B782D78E7 /* 📦 Copy Pods Resources */,
+				58E70AF01D3DC2470072D7BA /* Bundle React Native code and images */,
 			);
 			buildRules = (
 			);
@@ -455,6 +457,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		58E70AED1D3DC2210072D7BA /* Launch Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Launch Packager";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\nfi\nelse\nopen \"$SRCROOT/../node_modules/react-native/packager/launchPackager.command\" || echo \"Can't start packager automatically\"\nfi";
+		};
+		58E70AF01D3DC2470072D7BA /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
 		5D0967BE78F9255DDC472CD6 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
