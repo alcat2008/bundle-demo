@@ -4,6 +4,6 @@ import {
 } from 'react-native';
 
 
-import Gallery from './gallery';
+import Gallery from './gallery/galleryEntry';
 
 AppRegistry.registerComponent('bundleDemo', () => Gallery);
