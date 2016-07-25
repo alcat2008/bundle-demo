@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   View,
   Text,
+  InteractionManager,
 } from 'react-native';
 
 import RNFS from 'react-native-fs';
@@ -38,28 +39,30 @@ export default class PreviewImage extends Component {
   }
 
   componentDidMount() {
-    this.props.onLoadStart && this.props.onLoadStart();
-    const imagePath = FileUtil.getStoragePath(this.props.source.uri).imagePath;
-    RNFS.exists(imagePath).then((exists) => {
-      if (!exists) {
-        RNFS.downloadFile({ fromUrl: this.props.source.uri, toFile: imagePath })
-          .then((response) => { // eslint-disable-line no-unused-vars
-            this.setState({
-              status: 'success',
-              filePath: { uri: 'file://' + imagePath },
+    InteractionManager.runAfterInteractions(() => {
+      this.props.onLoadStart && this.props.onLoadStart();
+      const imagePath = FileUtil.getStoragePath(this.props.source.uri).imagePath;
+      RNFS.exists(imagePath).then((exists) => {
+        if (!exists) {
+          RNFS.downloadFile({ fromUrl: this.props.source.uri, toFile: imagePath })
+            .then((response) => { // eslint-disable-line no-unused-vars
+              this.setState({
+                status: 'success',
+                filePath: { uri: 'file://' + imagePath },
+              });
+            })
+            .catch((err) => {  // eslint-disable-line no-unused-vars
+              this.setState({
+                status: 'fail'
+              });
             });
-          })
-          .catch((err) => {  // eslint-disable-line no-unused-vars
-            this.setState({
-              status: 'fail'
-            });
+        } else {
+          this.setState({
+            status: 'success',
+            filePath: { uri: 'file://' + imagePath },
           });
-      } else {
-        this.setState({
-          status: 'success',
-          filePath: { uri: 'file://' + imagePath },
-        });
-      }
+        }
+      });
     });
   }
 
@@ -89,15 +92,16 @@ export default class PreviewImage extends Component {
       justifyContent: 'center',
     });
 
-    if (this.state.status === 'success') {
+    if (this.state.status !== 'success') {
       return (
         <Image
           {...this.props}
           style={imageStyle}
-          // onLoadStart={this.onLoadStart}
-          onLoad={this.onLoad}
-          source={this.state.filePath}
-        />
+          source={this.state.thumb}
+        >
+          {this._renderLoading()}
+          {this._renderFail()}
+        </Image>
       );
     }
 
@@ -105,11 +109,10 @@ export default class PreviewImage extends Component {
       <Image
         {...this.props}
         style={imageStyle}
-        source={this.state.thumb}
-      >
-        {this._renderLoading()}
-        {this._renderFail()}
-      </Image>
+        // onLoadStart={this.onLoadStart}
+        onLoad={this.onLoad}
+        source={this.state.filePath}
+      />
     );
   }
 
