@@ -26,7 +26,7 @@
 
 - (void) initReact {
 
-    NSString *urlString = @"http://192.168.1.102:8081/index.ios.bundle?platform=ios&dev=true";
+    NSString *urlString = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
     NSURL *jsCodeLocation = [NSURL URLWithString:urlString];
 
     // For production use, this `NSURL` could instead point to a pre-bundled file on disk:

@@ -1,21 +1,21 @@
 PODS:
-  - React (0.28.0):
-    - React/Core (= 0.28.0)
-  - React/Core (0.28.0)
-  - React/RCTImage (0.28.0):
+  - React (0.35.0):
+    - React/Core (= 0.35.0)
+  - React/Core (0.35.0)
+  - React/RCTImage (0.35.0):
     - React/Core
     - React/RCTNetwork
-  - React/RCTNetwork (0.28.0):
+  - React/RCTNetwork (0.35.0):
     - React/Core
-  - React/RCTText (0.28.0):
+  - React/RCTText (0.35.0):
     - React/Core
-  - React/RCTWebSocket (0.28.0):
+  - React/RCTWebSocket (0.35.0):
     - React/Core
-  - RNDeviceInfo (0.9.2):
+  - RNDeviceInfo (0.9.3):
     - React
   - RNFS (1.5.1):
     - React/Core
-  - RNVectorIcons (2.0.3):
+  - RNVectorIcons (2.1.0):
     - React
 
 DEPENDENCIES:
@@ -39,10 +39,10 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native-vector-icons
 
 SPEC CHECKSUMS:
-  React: 43544faed4af6a0e8fbc4b3abd26141ed654fa49
-  RNDeviceInfo: e3fe8d8fe52f74eab22b7d4784a4fdd2e9bf4a26
+  React: d80af5410aa500d0cb1bce2cc4493a584cf2ec92
+  RNDeviceInfo: dc3cbee96cd2392cf03d6ff6191dc15f1606a166
   RNFS: 6fb868f952cc22f39a573056557182d4b574956f
-  RNVectorIcons: 39a5d8b29e83a462cd8d16185144d308edc9273f
+  RNVectorIcons: 8e9308e458f5ccb843d1f11d4aa4ae6368c70214
 
 PODFILE CHECKSUM: a973899bc2afaf0fed1e89ae02fd8a3a7c044ccb
 

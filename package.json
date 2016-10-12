@@ -8,19 +8,17 @@
   },
   "dependencies": {
     "co": "^4.6.0",
-    "flux": "^2.1.1",
     "keymirror": "^0.1.1",
-    "lodash": "^4.13.1",
+    "lodash": "^4.16.4",
     "moment": "^2.13.0",
-    "mx-artifacts": "^0.2.8",
-    "react": "^15.1.0",
-    "react-native": "^0.28.0",
+    "mx-artifacts": "^0.2.9",
+    "react": "15.3.2",
+    "react-native": "0.35.0",
     "react-native-device-info": "^0.9.3",
     "react-native-fs": "^1.5.1",
     "react-native-gallery": "0.0.15",
     "react-native-share": "^1.0.11",
     "react-native-swiper": "^1.4.6",
-    "react-native-vector-icons": "^2.0.3",
-    "realm": "^0.13.2"
+    "react-native-vector-icons": "^2.1.0"
   }
 }

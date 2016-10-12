@@ -5,9 +5,7 @@
 	};
 	objectVersion = 47;
 	objects = {
-
 /* Begin PBXBuildFile section */
-		0371D05BF5C64D1C92E0A51B /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38E4EDBCC3D45E888F423FF /* libRealmReact.a */; };
 		1547D12766354275804FA156 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A8D1D4AD8408F9B27A9D9 /* libz.tbd */; };
 		5833F6E11CFFFFAC000008B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833F6E01CFFFFAC000008B7 /* main.m */; };
 		5833F6E41CFFFFAC000008B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833F6E31CFFFFAC000008B7 /* AppDelegate.m */; };
@@ -49,13 +47,6 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNShare;
 		};
-		583941621D0D1B090071CC3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4340656A78794AE7BDD16178 /* RealmReact.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F60690131CA2766F0003FB26;
-			remoteInfo = RealmReact;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +54,6 @@
 		36C696CB07ADABEC84D1EB20 /* libPods-bundleDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bundleDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3878516661F5029B1E8AC48C /* Pods-bundleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-bundleDemo/Pods-bundleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4015FA7037AE71911A21066F /* Pods-bundleDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundleDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bundleDemoTests/Pods-bundleDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		4340656A78794AE7BDD16178 /* RealmReact.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RealmReact.xcodeproj; path = "../node_modules/realm/react-native/ios/RealmReact.xcodeproj"; sourceTree = "<group>"; };
 		44334BBABB6ADE84D32E2641 /* libPods-bundleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bundleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5833F6DC1CFFFFAB000008B7 /* bundleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bundleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5833F6E01CFFFFAC000008B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,7 +84,6 @@
 		B1848903FEF3CEE7D9543227 /* Pods-bundleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bundleDemoUITests/Pods-bundleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD6A8D1D4AD8408F9B27A9D9 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		EBC10BA35C104F3BBD6E764D /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		F38E4EDBCC3D45E888F423FF /* libRealmReact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRealmReact.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +93,6 @@
 			files = (
 				9A299B475CAD79A54394D180 /* libPods-bundleDemo.a in Frameworks */,
 				B08EF7A7BFE7438692D91DEA /* libRNShare.a in Frameworks */,
-				0371D05BF5C64D1C92E0A51B /* libRealmReact.a in Frameworks */,
 				601032942F71414FBCDF9271 /* libc++.tbd in Frameworks */,
 				1547D12766354275804FA156 /* libz.tbd in Frameworks */,
 			);
@@ -145,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				A4F1A08A992443CFB2047F0D /* RNShare.xcodeproj */,
-				4340656A78794AE7BDD16178 /* RealmReact.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -237,14 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				583941571D0D0F2A0071CC3D /* libRNShare.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5839415F1D0D1B090071CC3D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				583941631D0D1B090071CC3D /* libRealmReact.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,10 +329,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5839415F1D0D1B090071CC3D /* Products */;
-					ProjectRef = 4340656A78794AE7BDD16178 /* RealmReact.xcodeproj */;
-				},
-				{
 					ProductGroup = 583941531D0D0F2A0071CC3D /* Products */;
 					ProjectRef = A4F1A08A992443CFB2047F0D /* RNShare.xcodeproj */;
 				},
@@ -373,13 +348,6 @@
 			fileType = archive.ar;
 			path = libRNShare.a;
 			remoteRef = 583941561D0D0F2A0071CC3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		583941631D0D1B090071CC3D /* libRealmReact.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRealmReact.a;
-			remoteRef = 583941621D0D1B090071CC3D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -720,8 +688,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -737,8 +703,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,8 +718,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -772,8 +734,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -789,8 +749,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -806,8 +764,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcat.bundleDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

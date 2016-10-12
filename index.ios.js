@@ -6,4 +6,8 @@ import {
 
 import Gallery from './gallery/galleryEntry';
 
-AppRegistry.registerComponent('bundleDemo', () => Gallery);
+import NavigationExperimentalExample from './NavigationExperimental/NavigationExperimentalExample';
+
+import TabBarExample from './Navigator/NavigatorExample';
+
+AppRegistry.registerComponent('bundleDemo', () => TabBarExample);
